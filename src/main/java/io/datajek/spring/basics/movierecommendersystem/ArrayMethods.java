@@ -2,14 +2,14 @@ package io.datajek.spring.basics.movierecommendersystem;
 
 public class ArrayMethods {
 
-  int findIndex(int[] array, int number) {
-    int index = -1;
-    for (int i = 0; i < array.length; i++) {
-      if (array[i] == number)
-          index = i;
+    int findIndex(int[] array, int number) {
+      int index = -1;
+      for (int i = 0; i < array.length; i++) {
+        if (array[i] == number)
+            index = i;
+      }
+      return index;
     }
-    return index;
-  }
 
   boolean searchForNumber(int[] array, int numberToSearchFor) {
     //search for number, return true if found
