@@ -11,15 +11,25 @@ public class ArrayMethods {
     return index;
   }
 
-  boolean searchForNumber(int[] array, int numberToSearchFor) {
-    //search for number, return true if found
-    boolean found = false;
-    for (int i : array) {
-      if (array[i] == numberToSearchFor) {
-        found = true;
-        return found;
-      }
-    }
-    return found;
+//  boolean searchForNumber(int[] array, int numberToSearchFor) {
+//    //search for number, return true if found
+//    boolean found = false;
+//    for (int i : array) {
+//      if (array[i] == numberToSearchFor) {
+//        found = true;
+//        return found;
+//      }
+//    }
+//    return found;
+//  }
+//
+//  //unimplemented method
+//  int[] sortArray(int[] numbers) {
+//    //implement sort
+//    return new int[] {};
+//  }
+
+  void printArray(int[] array, int index) {
+    System.out.println(array[index]);
   }
 }
