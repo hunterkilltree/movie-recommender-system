@@ -22,4 +22,14 @@ public class ArrayMethods {
     }
     return found;
   }
+
+  //unimplemented method
+  int[] sortArray(int[] numbers) {
+    //implement sort
+    return new int[] {};
+  }
+
+  void printArray(int[] array, int index) {
+    System.out.println(array[index]);
+  }
 }
