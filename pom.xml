@@ -57,7 +57,7 @@
 	<!-- Profile to activate the code coverage -->
 	<profiles>
 		<profile>
-			<id>Sonar way</id>
+			<id>coverage</id>
 			<build>
 				<plugins>
 					<plugin>
