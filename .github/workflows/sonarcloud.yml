@@ -19,7 +19,7 @@ jobs:
           java-version: 17
           distribution: 'zulu' # Alternative distribution options are available.
       - name: Build with Maven
-        run: mvn -B package -Pcoverage
+        run: mvn verify package -Pcoverage
 
       - name: Generate JaCoCo badge
         id: jacoco

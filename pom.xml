@@ -79,6 +79,7 @@
 								<configuration>
 									<formats>
 										<format>XML</format>
+										<format>CSV</format>
 									</formats>
 								</configuration>
 							</execution>
