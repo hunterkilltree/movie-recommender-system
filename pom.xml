@@ -22,7 +22,7 @@
 		<sonar.projectKey>hunterkilltree_movie-recommender-system</sonar.projectKey>
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
 <!--		<sonar.java.enablePreview>true</sonar.java.enablePreview>-->
-		<sonar.coverage.jacoco.xmlReportPaths>target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+<!--		<sonar.coverage.jacoco.xmlReportPaths>target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>-->
 		<sonar.language>java</sonar.language>
 
 	</properties>
