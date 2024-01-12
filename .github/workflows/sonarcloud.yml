@@ -18,25 +18,6 @@ jobs:
         with:
           java-version: 17
           distribution: 'zulu' # Alternative distribution options are available.
-      - name: Build with Maven
-        run: mvn verify package -Pcoverage
-
-      - name: Generate JaCoCo badge
-        id: jacoco
-        uses: cicirello/jacoco-badge-generator@v2
-        with:
-          badges-directory: badges
-          generate-branches-badge: true
-          generate-summary: true
-      - name: Log coverage percentages to workflow output
-        run: |
-          echo "coverage = ${{ steps.jacoco.outputs.coverage }}"
-          echo "branches = ${{ steps.jacoco.outputs.branches }}"
-      - name: Upload JaCoCo coverage report as a workflow artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: jacoco-report
-          path: target/site/jacoco/
       - name: Cache SonarCloud packages
         uses: actions/cache@v3
         with:
